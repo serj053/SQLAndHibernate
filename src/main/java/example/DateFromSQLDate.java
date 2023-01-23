@@ -7,4 +7,5 @@ public class DateFromSQLDate {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         return LocalDate.parse(dateSQL, formatter);
     }
+
 }

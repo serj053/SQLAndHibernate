@@ -3,11 +3,11 @@ package example;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-
 import static example.ConnectionManagerUtil.open;
 
 class Main {
     public static void main(String[] args) {
+
         Connection connection;
         Statement statement;
         Statement statement2;
@@ -24,7 +24,6 @@ class Main {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     private static double getSQLSet(String sql, Statement statement2) throws SQLException {
